@@ -20,7 +20,7 @@ Here i'm going to save good tips and tricks for python development
   <tbody>
     <tr>
       <td><pre>def upper_limit_3():<br>    x = int(input('x = '))<br>    if x > 3:<br>        x = 3<br>    return x</pre></td>
-      <td><pre>def upper_limit_3():<br>    x = int(input('x = '))<br>    retrun max(x, 3)</pre></td>
+      <td><pre>def upper_limit_3():<br>    x = int(input('x = '))<br>    retrun min(x, 3)</pre></td>
     </tr>
   </tbody>
 </table>
