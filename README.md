@@ -4,9 +4,6 @@ Here i'm going to save good tips and tricks for python development
 > Example 1: How to return True.
 
 <table>
-  <caption>
-    Don't repeat yourself (DRY)
-  </caption>
   <thead>
     <tr>
       <th>❌</th>
@@ -16,18 +13,14 @@ Here i'm going to save good tips and tricks for python development
   <tbody>
     <tr>
       <td>
-        ```python
-        def func(x: int):
-            if x == 1:  # Or check other condition
-            return True
-        ```
+        <pre>def func(x: int):<br>    if x == 1:  # Or check other condition<br>        return True</pre>
       </td>
       <td>
-        ```python
-        def func(x: int):
-            return x == 1  # Or return other condition
-        ```
+        <pre>def func(x: int):<br>    return x == 1  # Or return other condition</pre>
       </td>
     </tr>
   </tbody>
+  <caption>
+    Don't repeat yourself (DRY)
+  </caption>
 </table>
