@@ -8,7 +8,7 @@ Here i'm going to save good tips and tricks for python development
   <tbody>
     <tr>
       <td><pre>def func(x: int):<br>    if x == 1:  # Or check other condition<br>        return True</pre></td>
-      <td><pre>def func(x: int):<br>    return x == 1  # Or return other condition</pre></td>
+      <td><pre>def func(x: int):<br>    return x == 1  # Or return other condition<br></pre></td>
     </tr>
   </tbody>
 </table>
@@ -20,7 +20,7 @@ Here i'm going to save good tips and tricks for python development
   <tbody>
     <tr>
       <td><pre>def upper_limit_3():<br>    x = int(input('x = '))<br>    if x > 3:<br>        x = 3<br>    return x</pre></td>
-      <td><pre>def upper_limit_3():<br>    x = int(input('x = '))<br>retrun max(x, 3)</pre></td>
+      <td><pre>def upper_limit_3():<br>    x = int(input('x = '))<br>    retrun max(x, 3)<br><br></pre></td>
     </tr>
   </tbody>
 </table>
