@@ -95,3 +95,27 @@ print(can_delete_user(user_id=1234))
     </tr>
   </tbody>
 </table>
+<hr>
+
+## Example 5: How to generate list <u>with integer numbers</u>.
+<table>
+  <thead><tr><th>❌</th><th>✔️</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre class="python">
+lst = [] 
+for i in range(10):
+    lst.append(i)
+# ------- OR -------
+lst = [i for i in range(10)] 
+        </pre>
+      </td>
+      <td>
+        <pre class="python">
+lst = list(range(10))
+        </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
