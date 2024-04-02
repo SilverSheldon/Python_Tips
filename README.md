@@ -38,9 +38,7 @@ def can_buy_alco(age, money, time_of_purchase: time):
     if age >= 18 and money > 100 and time_of_purchase <= time(22):
         return 'You can buy alco'
     return 'You can't buy alco'<br>
-print(can_buy_alco(19, 105, time(19, 15)))
-        </pre>
-      </td>
+print(can_buy_alco(19, 105, time(19, 15)))</pre></td>
       <td>
         <pre class="python">
 from datetime import time<br>
@@ -53,12 +51,7 @@ def can_buy_alco(age, money, time_of_purchase: time):
     if all(conditions):
         return 'You can buy alco'
     return 'You can't buy alco'<br>
-print(can_buy_alco(15, 105, time(23, 15)))
-        </pre>
-      </td>
-    </tr>
-  </tbody>
-</table>
+print(can_buy_alco(15, 105, time(23, 15)))</pre></td></tr></tbody></table>
 <hr>
 
 ## Example 4: How to check any conditon (at least one of them).
@@ -74,9 +67,7 @@ def can_delete_user(user_id: int):
     if user_id in ADMINS or user_id in MODERATORS:
         return 'You can delete user'
     return 'You can't delete user'<br>
-print(can_delete_user(user_id=1234))
-        </pre>
-      </td>
+print(can_delete_user(user_id=1234))</pre></td>
       <td>
         <pre class="python">
 def can_delete_user(user_id: int):
@@ -89,15 +80,11 @@ def can_delete_user(user_id: int):
     if any(conditions):
         return 'You can delete user'
     return 'You can't delete user'<br>
-print(can_delete_user(user_id=1234))
-        </pre>
-      </td>
-    </tr>
-  </tbody>
+print(can_delete_user(user_id=1234))</pre></td></tr></tbody>
 </table>
 <hr>
 
-## Example 5: How to generate list <u>with integer numbers</u>.
+## Example 5: How to generate list *with integer numbers*.
 <table>
   <thead><tr><th>❌</th><th>✔️</th></tr></thead>
   <tbody>
@@ -107,15 +94,8 @@ print(can_delete_user(user_id=1234))
 lst = [] 
 for i in range(10):
     lst.append(i)
-# ------- OR -------
-lst = [i for i in range(10)] 
-        </pre>
-      </td>
+# ----------- OR -----------
+lst = [i for i in range(10)]</pre></td>
       <td>
-        <pre class="python">
-lst = list(range(10))
-        </pre>
-      </td>
-    </tr>
-  </tbody>
+        <pre class="python">lst = list(range(10))</pre></td></tr></tbody>
 </table>
