@@ -26,7 +26,7 @@ Here i'm going to save good tips and tricks for python development
 </table>
 <hr>
 
-## Example 3: How to evaluate against all conditon.
+## Example 3: How to check all conditon.
 <table>
   <thead><tr><th>❌</th><th>✔️</th></tr></thead>
   <tbody>
@@ -45,15 +45,51 @@ print(can_buy_alco(19, 105, time(19, 15)))  # True
         <pre class="python">
 from datetime import time<br>
 def can_buy_alco(age, money, time_of_purchase: time):
-    conditions = [
+    conditions = (
         age >= 18,
         money > 100,
         time_of_purchase <= time(22)
-    ]
+    )
     if all(conditions):
         return True
     return False<br>
 print(can_buy_alco(15, 105, time(23, 15)))  # False
+        </pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr>
+
+## Example 4: How to check any conditon (at least one of them).
+<table>
+  <thead><tr><th>❌</th><th>✔️</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre class="python">
+def can_delete_user(user_id: int):
+    ADMINS = [...]
+    MODERATORS = [...]
+    if user_id in ADMINS or user_id in MODERATORS:
+        return True
+    return False<br>
+print(can_delete_user(user_id=1234))  # returns True
+        </pre>
+      </td>
+      <td>
+        <pre class="python">
+def can_delete_user(user_id: int):
+    ADMINS = [...]
+    MODERATORS = [...]
+    conditions = [
+        user_id in ADMINS,
+        user_id in MODERATORS,
+    ]
+    if any(conditions):
+        return True
+    return False<br>
+print(can_delete_user(user_id=1234))  # returns True
         </pre>
       </td>
     </tr>
