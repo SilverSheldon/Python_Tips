@@ -26,7 +26,7 @@ Here i'm going to save good tips and tricks for python development
 </table>
 <hr>
 
-## Example 3: How to check all conditon.
+## Example 3: How to check all conditons.
 <table>
   <thead><tr><th>❌</th><th>✔️</th></tr></thead>
   <tbody>
