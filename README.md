@@ -93,9 +93,35 @@ print(can_delete_user(user_id=1234))</pre></td></tr></tbody>
         <pre class="python">
 lst = [] 
 for i in range(10):
-    lst.append(i)
-# ----------- OR -----------
-lst = [i for i in range(10)]</pre></td>
+    lst.append(i)</pre>
+Or
+        <pre class="python">lst = [i for i in range(10)]</pre></td>
       <td>
         <pre class="python">lst = list(range(10))</pre></td></tr></tbody>
+</table>
+<hr>
+
+## Example 6: How to work with power of two.
+(sometimes it's useful to remember about bitwise operations)
+
+<table>
+  <thead><tr><th>❌</th><th>✔️</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre class="python">
+def is_binary(n):
+    if n == 1:
+        return True
+    elif n <= 0:
+        return False
+    else:
+        if n % 2 != 0:
+            return False
+        else:
+            return is_binary(n // 2)</pre></td>
+      <td>
+        <pre class="python">
+def is_binary(n):
+    return n & (n - 1) == 0</pre></td></tr></tbody>
 </table>
