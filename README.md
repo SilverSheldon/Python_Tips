@@ -36,9 +36,9 @@ Here i'm going to save good tips and tricks for python development
 from datetime import time<br>
 def can_buy_alco(age, money, time_of_purchase: time):
     if age >= 18 and money > 100 and time_of_purchase <= time(22):
-        return True
-    return False<br>
-print(can_buy_alco(19, 105, time(19, 15)))  # True
+        return 'You can buy alco'
+    return 'You can't buy alco'<br>
+print(can_buy_alco(19, 105, time(19, 15)))
         </pre>
       </td>
       <td>
@@ -51,8 +51,8 @@ def can_buy_alco(age, money, time_of_purchase: time):
         time_of_purchase <= time(22)
     )
     if all(conditions):
-        return True
-    return False<br>
+        return 'You can buy alco'
+    return 'You can't buy alco'<br>
 print(can_buy_alco(15, 105, time(23, 15)))  # False
         </pre>
       </td>
@@ -72,9 +72,9 @@ def can_delete_user(user_id: int):
     ADMINS = [...]
     MODERATORS = [...]
     if user_id in ADMINS or user_id in MODERATORS:
-        return True
-    return False<br>
-print(can_delete_user(user_id=1234))  # returns True
+        return 'You can delete user'
+    return 'You can't delete user'<br>
+print(can_delete_user(user_id=1234))
         </pre>
       </td>
       <td>
@@ -87,9 +87,9 @@ def can_delete_user(user_id: int):
         user_id in MODERATORS,
     ]
     if any(conditions):
-        return True
-    return False<br>
-print(can_delete_user(user_id=1234))  # returns True
+        return 'You can delete user'
+    return 'You can't delete user'<br>
+print(can_delete_user(user_id=1234))
         </pre>
       </td>
     </tr>
