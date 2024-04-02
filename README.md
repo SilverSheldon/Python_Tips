@@ -94,7 +94,7 @@ print(can_delete_user(user_id=1234))</pre></td></tr></tbody>
 lst = [] 
 for i in range(10):
     lst.append(i)</pre>
-Or
+Or:<br>
         <pre class="python">lst = [i for i in range(10)]</pre></td>
       <td>
         <pre class="python">lst = list(range(10))</pre></td></tr></tbody>
@@ -124,4 +124,44 @@ def is_binary(n):
         <pre class="python">
 def is_binary(n):
     return n & (n - 1) == 0</pre></td></tr></tbody>
+</table>
+<hr>
+
+## Example 7: How to orginize a lot of similar conditions.
+
+<table>
+  <thead><tr><th>❌</th><th>✔️</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre class="python">
+def colorize_text(text, color=None):
+    if color == 'red':
+        return f"\033[31m{text}\033[m"
+    elif color == 'green':
+        return f"\033[32m{text}\033[m"
+    elif color == 'yellow':
+        return f"\033[33m{text}\033[m"
+    else:
+        return text</pre>
+Or:<br>
+        <pre class="python">
+def colorize_text(text, color=None):
+    match color:
+        case 'red':
+            return f"\033[31m{text}\033[m"
+        case 'green':
+            return f"\033[32m{text}\033[m"
+        case 'yellow':
+            return f"\033[33m{text}\033[m"
+    return text</pre></td>
+      <td>
+        <pre class="python">
+def colorize_text(text, color=None):
+    colors = {
+        'red': "\033[31m",
+        'green': "\033[32m",
+        'yellow': "\033[33m",
+    }
+    return f"{colors.get(color, '')}{text}\033[m"</pre></td></tr></tbody>
 </table>
