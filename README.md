@@ -2,7 +2,7 @@
 Here i'm going to save good tips and tricks for python development
 <hr>
 
-## Example 1: How to return True.
+## Example 1: How to return True/False.
 <table>
   <thead><tr><th>❌</th><th>✔️</th></tr></thead>
   <tbody>
