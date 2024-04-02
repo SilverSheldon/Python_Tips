@@ -26,7 +26,7 @@ Here i'm going to save good tips and tricks for python development
 </table>
 <hr>
 
-## Example 3: How to evaluate against any conditon.
+## Example 3: How to evaluate against all conditon.
 <table>
   <thead><tr><th>❌</th><th>✔️</th></tr></thead>
   <tbody>
@@ -53,7 +53,7 @@ def can_buy_alco(age: int, money: float, time_of_purchase: time):
     if all(conditions):
         return True
     return False<br>
-print(can_buy_alco(15, 105, time(23, 15)))
+print(can_buy_alco(15, 105, time(23, 15)))  # returns False
         </pre>
       </td>
     </tr>
