@@ -34,9 +34,9 @@ Here i'm going to save good tips and tricks for python development
       <td>
         <pre class="python">
 from datetime import time<br>
-def can_buy_alco(age: int, money: float, time_of_purchase: time):<br>
-    if age >= 18 and money > 100 and time_of_purchase <= time(22):<br>
-        return True<br>
+def can_buy_alco(age: int, money: float, time_of_purchase: time):
+    if age >= 18 and money > 100 and time_of_purchase <= time(22):
+        return True
     return False<br>
 print(can_buy_alco(19, 105, time(19, 15)))  # returns True
         </pre>
@@ -44,16 +44,16 @@ print(can_buy_alco(19, 105, time(19, 15)))  # returns True
       <td>
         <pre class="python">
 from datetime import time<br>
-def can_buy_alco(age: int, money: float, time_of_purchase: time):<br>
-    conditions = [<br>
-        age >= 18,<br>
-        money > 100,<br>
-        time_of_purchase <= time(22)<br>
-    ]<br>
-    if all(conditions):<br>
-        return True<br>
+def can_buy_alco(age: int, money: float, time_of_purchase: time):
+    conditions = [
+        age >= 18,
+        money > 100,
+        time_of_purchase <= time(22)
+    ]
+    if all(conditions):
+        return True
     return False<br>
-print(can_buy_alco(15, 105, time(23, 15)))<br>
+print(can_buy_alco(15, 105, time(23, 15)))
         </pre>
       </td>
     </tr>
