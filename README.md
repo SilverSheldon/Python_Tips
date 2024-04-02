@@ -53,7 +53,7 @@ def can_buy_alco(age, money, time_of_purchase: time):
     if all(conditions):
         return 'You can buy alco'
     return 'You can't buy alco'<br>
-print(can_buy_alco(15, 105, time(23, 15)))  # False
+print(can_buy_alco(15, 105, time(23, 15)))
         </pre>
       </td>
     </tr>
