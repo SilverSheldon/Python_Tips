@@ -165,3 +165,23 @@ def colorize_text(text, color=None):
     }
     return f"{colors.get(color, '')}{text}\033[m"</pre></td></tr></tbody>
 </table>
+<hr>
+
+## Example 8: How to make `while` shorter.
+(sometimes it's useful to remember about valrus operator)
+
+<table>
+  <thead><tr><th>❌</th><th>✔️</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <pre class="python">
+s = input("Enter smth: ")
+while s != "":
+    print(s.upper())
+    s = input("Enter smth: ")</pre></td>
+      <td>
+        <pre class="python">
+while (s := input("Enter smth: ")) != "":
+    print(s.upper())</pre></td></tr></tbody>
+</table>
